@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: #fff;
+            text-align: center;
+            padding: 3rem 0;
+            position: relative;
+        }
+
+        .header-content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header-content h1 {
+            font-size: 3.5rem;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .header-content p {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+
+        .profile-picture {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #fff;
+            margin-bottom: 15px;
+        }
+
+        nav {
+            background-color: #222;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.3rem;
+            font-weight: 400;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        .section-content {
+            background-color: #fff;
+            padding: 2.5rem;
+            margin: 2rem auto;
+            max-width: 850px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .section-content h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            max-width: 450px;
+            margin: 0 auto;
+        }
+
+        .skills-container div {
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 1.2rem;
+            font-weight: 400;
+            text-align: center;
+            background: #fff;
+            width: 190px;
+        }
+
+        .download-button {
+            background: #1e3c72;
+            color: #fff;
+            padding: 0.85rem 1.7rem;
+            text-decoration: none;
+            border-radius: 30px;
+            display: inline-block;
+            margin-top: 15px;
+            font-size: 1.2rem;
+            font-weight: 400;
+            transition: background 0.3s;
+        }
+
+        .download-button:hover {
+            background: #2a5298;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem 0;
+            background: #222;
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="profile.png" alt="Your Profile Picture" class="profile-picture">
+            <h1>Meelin Thiyam</h1>
+            <p>Data Analyst</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>I am a passionate Data Analyst with expertise in data visualization, business intelligence, and statistical analysis. I have hands-on experience with tools like MS Excel, Power BI, and Tableau, enabling me to extract insights from complex datasets. I am eager to apply my analytical skills in real-world scenarios and contribute to data-driven decision-making.</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2>Education</h2>
+            <p>Madras University - Pursuing a career in Computer Applications</p>
+            <p>Enlighten Knowledge Higher Secondary School (2020-2022)</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div>MS Excel</div>
+                <div>Power BI</div>
+                <div>Tableau</div>
+                <div>Python</div>
+                <div>Data Visualization</div>
+                <div>Statistical Analysis</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="section-content">
+            <h2>Resume</h2>
+            <a href="Meelin_Thiyam_Resume.pdf" target="_blank" class="download-button">Download CV</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Meelin Thiyam</p>
+    </footer>
+</body>
+</html>
